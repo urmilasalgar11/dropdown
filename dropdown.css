@@ -1,0 +1,58 @@
+body{
+    font-family: "Jacquard 12 Charted", system-ui;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right bottom, bisque,cadetblue,chocolate);  /*multicolor*/
+    height: 100vh;
+}
+/*#img1{
+  /*  position: static;   /*default property and it will not overlap the contents
+   /* position:relative;   /* move towards bottom and it will occupy original space and content will be the access centre point
+   /*position:absolute; /*move towards top and it will not occupy space but it will take paragraph as a centre point
+  /* position:sticky;  /*it will not go outside the nav is similar to relative  and it will scroll down and take it as centre point
+  position: fixed; /*it will stay just for body and take it as centre point
+    top: 10px;
+    left:10px;
+}
+/*#img2{
+    position: relative;
+    top:10px;
+    left:10px;
+}
+#img2{
+   /* position: sticky;
+    top: 5px;
+    left: 5px;
+}*/
+
+nav{
+    /*display: flex; /*will control only children not grandchildren*/
+    background-color: coral;
+}
+#content{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: azure;
+    padding: 20px;
+    display: block;
+}
+a:hover{   /*will work for itself as well as children*/
+    background-color: cornflowerblue;
+}
+#menu{
+    list-style-type: none;
+    padding: 0;    /*ul doesn't have padding and margin so apply externally*/
+    margin: 0;
+    background-color:darkkhaki;
+    position: absolute;
+    display:none ;
+
+}
+#drop:hover #menu{
+    display: block;
+}
+
